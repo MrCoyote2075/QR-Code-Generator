@@ -1,0 +1,105 @@
+.container {
+    border: 2px solid rgb(19, 161, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+    height: 58vh;
+    padding: 0px 0px 40px 0px;
+    overflow: auto;
+    text-align: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 10px 3px hsla(199, 100%, 50%, 0.301);
+}
+.title {
+    font-family: Calibri, sans-serif;
+    font-size: 3.3rem;
+    border: 0px 0px 0px 0px;
+    text-shadow: 2px 1px 2px hsla(0, 0%, 0%, 0.389);
+    color: hsl(199, 100%, 50%);
+}
+.imageArea {
+    /* padding: 100px 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 178px;
+    min-height: 180px;
+    border: 6px solid rgb(39, 39, 39);
+    margin-bottom: 30px;
+}
+.imageArea img{
+    border-radius: 10px;
+}
+.inputContent .inputArea {
+    padding: 1vh 3dvh;
+    width: 250px;
+    font-size: 1rem;
+    outline: 0;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 1.5px solid rgb(0, 140, 255);
+    font-family: cursive;
+}
+.inputContent .inputArea:hover {
+    background-color: rgb(247, 254, 255);
+}
+.inputContent .inputArea:active {
+    background-color: rgb(247, 254, 255);
+}
+.GenBtn {
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    margin-right: 5px;
+    color:  hsl(128, 81%, 44%);
+    border: 1px solid  hsl(128, 81%, 44%);
+    background-color: white;
+    transition: .2s;
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+}
+.GenBtn:hover {
+    color: white;
+    background-color: hsla(106, 100%, 50%, 0.637);
+    transition: .2s;
+}
+.DownBtn {
+    font-size: 15px;
+    padding: 10px 30px;
+    margin-left: 5px;
+    border-radius: 20px;
+    border: 1px solid hsl(194, 100%, 50%);
+    outline: 0;
+    color: hsl(194, 100%, 50%);
+    background-color: white;
+    transition: .2s;
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+}
+.DownBtn:hover {
+    color: white;
+    background-color: hsl(194, 100%, 50%);
+    transition: .2s;
+    
+}
+.loading{
+    border: 7px dotted rgb(212, 212, 212) ;
+    border-top: 7px dotted black;
+    margin-bottom: 20px;
+    padding: 16px;
+    border-radius: 50%;
+    animation: spin .9s infinite linear;
+}
+@keyframes spin{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
